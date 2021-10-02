@@ -1,3 +1,5 @@
 # rfSwiftUI
 
-A description of this package.
+Utility extensions for the SwiftUI.
+
+
