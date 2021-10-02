@@ -11,7 +11,8 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: { ShapeStrokeAndFill() }, label: { Text("ShapeStrokeAndFill") })
+                NavigationLink(destination: { ShapeStrokeAndFill() }, label: { Text("Shape Stroke and Fill") })
+                NavigationLink(destination: { CustomShapesDemo() }, label: { Text("Custom Shapes ") })
             }
             .navigationBarTitle(Text("Demos"))
             .padding()
@@ -24,3 +25,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
