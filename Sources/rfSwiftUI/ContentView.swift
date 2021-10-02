@@ -11,7 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: { Text("Hello SwiftUI") }, label: { Text("Text") })
+                NavigationLink(destination: { ShapeStrokeAndFill() }, label: { Text("ShapeStrokeAndFill") })
             }
             .navigationBarTitle(Text("Demos"))
             .padding()
