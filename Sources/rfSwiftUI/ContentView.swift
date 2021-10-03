@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+/// Presents a selection of demos
+///
 struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
-                NavigationLink(destination: { ShapeStrokeAndFill() }, label: { Text("Shape Stroke and Fill") })
+                NavigationLink(destination: { ShapeStrokeAndFillDemo() }, label: { Text("Shape Stroke and Fill") })
                 NavigationLink(destination: { CustomShapesDemo() }, label: { Text("Custom Shapes ") })
 
                 NavigationLink(destination: { StripedShapesDemo() }, label: { Text("Striped Shapes ") })
@@ -22,6 +24,8 @@ struct ContentView: View {
     }
 }
 
+///
+///
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()

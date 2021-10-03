@@ -13,8 +13,11 @@ import SwiftUI
 // MARK: - extensions
 
 extension Shape {
-    // stroke and fill a shape
-    // eg. Circle().stroke(Color.red, lineWidth: 7, fill: Color.green)
+    /// Stroke and fill a Shape, for example
+    ///
+    /// ````
+    /// Circle().stroke(Color.red, lineWidth: 7, fill: Color.green)
+    /// ```
     func stroke<StrokeStyle, FillStyle>(_ strokeStyle: StrokeStyle,
                                         lineWidth: CGFloat = 1,
                                         fill fillStyle: FillStyle) -> some View where StrokeStyle: ShapeStyle, FillStyle: ShapeStyle
@@ -25,8 +28,11 @@ extension Shape {
 }
 
 extension InsettableShape {
-    // strokeBorder and fill a shape
-    // eg. Circle().strokeBorder(Color.red, lineWidth: 7, fill: Color.green)
+    /// Stroke the border and fill an InsettableShape, for example
+    ///
+    /// ````
+    /// Circle().strokeBorder(Color.red, lineWidth: 7, fill: Color.green)
+    /// ````
     func strokeBorder<StrokeStyle, FillStyle>(_ strokeStyle: StrokeStyle,
                                               lineWidth: CGFloat = 1, fill fillStyle: FillStyle) -> some View where StrokeStyle: ShapeStyle, FillStyle: ShapeStyle
     {
@@ -37,7 +43,9 @@ extension InsettableShape {
 
 // MARK: - Demo
 
-struct ShapeStrokeAndFill: View {
+/// Demonstrates Shape Stroke and Fill methods on Shapes
+///
+struct ShapeStrokeAndFillDemo: View {
     var body: some View {
         HStack(spacing: 20) {
             VStack(spacing: 20) {
@@ -97,8 +105,10 @@ struct ShapeStrokeAndFill: View {
     }
 }
 
-struct ShapeStrokeAndFill_Previews: PreviewProvider {
+///
+///
+struct ShapeStrokeAndFillDemo_Previews: PreviewProvider {
     static var previews: some View {
-        ShapeStrokeAndFill()
+        ShapeStrokeAndFillDemo()
     }
 }

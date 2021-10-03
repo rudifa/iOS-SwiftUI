@@ -7,8 +7,20 @@
 
 import SwiftUI
 
-// MARK: custom Shapes
+// MARK: - custom Shapes
 
+/// Draws a diamond (rhombus) within the frame of the view containing it.
+///
+/// The diamond's vertices are centered on the frame sides.
+/// The diamond's diagonals equal to the frame rectangle's width and height, respectively.
+///
+/// Diamond accepts both .stroke and .strokeBorder methods:
+///
+/// ````
+/// Diamond().stroke(Color.red, lineWidth: 10, fill: Color.green)
+/// Diamond().strokeBorder(Color.red, lineWidth: 10, fill: Color.green)
+/// ````
+///
 struct Diamond: InsettableShape {
     var insetAmount: CGFloat = 0
 
@@ -43,6 +55,17 @@ struct Diamond: InsettableShape {
     }
 }
 
+/// Draws a squiggle within the frame of the view containing it.
+///
+/// The squiggle looks like an oversized character ~ (tilde).
+///
+/// Squiggle accepts both .stroke and .strokeBorder methods
+///
+/// ````
+/// Squiggle().stroke(Color.red, lineWidth: 10, fill: Color.green)
+/// Squiggle().strokeBorder(Color.red, lineWidth: 10, fill: Color.green)
+/// ````
+///
 struct Squiggle: InsettableShape {
     var insetAmount: CGFloat = 0
 
@@ -71,6 +94,8 @@ struct Squiggle: InsettableShape {
 
 // MARK: - Demo
 
+/// Demonstrates Custom Shapes
+/// 
 struct CustomShapesDemo: View {
     var body: some View {
         HStack(spacing: 20) {
@@ -117,6 +142,8 @@ struct CustomShapesDemo: View {
     }
 }
 
+///
+///
 struct CustomShapesDemo_Previews: PreviewProvider {
     static var previews: some View {
         CustomShapesDemo()

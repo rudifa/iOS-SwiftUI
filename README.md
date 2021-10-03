@@ -1,5 +1,5 @@
 # rfSwiftUI
 
-Utility extensions for the SwiftUI.
+Utility extensions for SwiftUI.
 
 See the documentation [here](docs/index.html).
