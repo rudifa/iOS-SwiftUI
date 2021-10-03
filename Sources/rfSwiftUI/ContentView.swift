@@ -13,6 +13,8 @@ struct ContentView: View {
             List {
                 NavigationLink(destination: { ShapeStrokeAndFill() }, label: { Text("Shape Stroke and Fill") })
                 NavigationLink(destination: { CustomShapesDemo() }, label: { Text("Custom Shapes ") })
+
+                NavigationLink(destination: { StripedShapesDemo() }, label: { Text("Striped Shapes ") })
             }
             .navigationBarTitle(Text("Demos"))
             .padding()
@@ -25,4 +27,3 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
