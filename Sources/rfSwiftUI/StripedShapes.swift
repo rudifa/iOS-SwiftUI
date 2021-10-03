@@ -9,12 +9,12 @@ import SwiftUI
 
 // MARK: - views and shape extensions
 
-extension Shape {
-
+public extension Shape {
     /// Stroke the shape and fill with 8 vertical stripes
     ///
     /// ````
     /// Circle().striped(lineWidth: 7)
+    /// ````
     ///
     func striped(lineWidth: CGFloat) -> some View {
         VStripes()
@@ -25,10 +25,15 @@ extension Shape {
 }
 
 /// Draws 8 vertical stripes in the view's rectangle
-struct VStripes: View {
-    let numberOfStripes = 8
+///
+public struct VStripes: View {
+    let numberOfStripes: Int
 
-    var body: some View {
+    public init(numberOfStripes: Int = 8) {
+        self.numberOfStripes = numberOfStripes
+    }
+
+    public var body: some View {
         GeometryReader { geometry in
             let step = geometry.size.width / CGFloat(numberOfStripes)
             let stripeWidth = step / 2

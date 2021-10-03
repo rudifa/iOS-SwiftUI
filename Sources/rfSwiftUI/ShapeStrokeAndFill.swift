@@ -12,7 +12,7 @@ import SwiftUI
 
 // MARK: - extensions
 
-extension Shape {
+public extension Shape {
     /// Stroke and fill a Shape, for example
     ///
     /// ````
@@ -27,7 +27,7 @@ extension Shape {
     }
 }
 
-extension InsettableShape {
+public extension InsettableShape {
     /// Stroke the border and fill an InsettableShape, for example
     ///
     /// ````

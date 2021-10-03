@@ -21,10 +21,14 @@ import SwiftUI
 /// Diamond().strokeBorder(Color.red, lineWidth: 10, fill: Color.green)
 /// ````
 ///
-struct Diamond: InsettableShape {
-    var insetAmount: CGFloat = 0
+public struct Diamond: InsettableShape {
+    var insetAmount: CGFloat
 
-    func inset(by amount: CGFloat) -> some InsettableShape {
+    public init(insetAmount: CGFloat = 0) {
+        self.insetAmount = insetAmount
+    }
+
+    public func inset(by amount: CGFloat) -> some InsettableShape {
         var diamond = self
         diamond.insetAmount += amount
         return diamond
@@ -38,7 +42,7 @@ struct Diamond: InsettableShape {
         return CGPoint(x: insetX, y: insetY)
     }
 
-    func path(in rect: CGRect) -> Path {
+    public func path(in rect: CGRect) -> Path {
         let insets = insets(in: rect, insetAmount: insetAmount)
         let left = CGPoint(x: rect.minX + insets.x, y: rect.midY)
         let right = CGPoint(x: rect.maxX - insets.x, y: rect.midY)
@@ -66,16 +70,20 @@ struct Diamond: InsettableShape {
 /// Squiggle().strokeBorder(Color.red, lineWidth: 10, fill: Color.green)
 /// ````
 ///
-struct Squiggle: InsettableShape {
-    var insetAmount: CGFloat = 0
+public struct Squiggle: InsettableShape {
+    var insetAmount: CGFloat
 
-    func inset(by amount: CGFloat) -> some InsettableShape {
+    public init(insetAmount: CGFloat = 0) {
+        self.insetAmount = insetAmount
+    }
+
+    public func inset(by amount: CGFloat) -> some InsettableShape {
         var squiggle = self
         squiggle.insetAmount += amount
         return squiggle
     }
 
-    func path(in rect: CGRect) -> Path {
+    public func path(in rect: CGRect) -> Path {
         let left = CGPoint(x: rect.minX + insetAmount, y: rect.maxY)
         let right = CGPoint(x: rect.maxX - insetAmount, y: rect.minY)
 
