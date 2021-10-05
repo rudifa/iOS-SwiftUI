@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-// MARK: - views and shape extensions
+// views and shape extensions
 
 public extension Shape {
     /// Stroke the shape and fill with 8 vertical stripes

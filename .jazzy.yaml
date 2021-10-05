@@ -1,0 +1,14 @@
+clean: true
+swift_build_tool:
+  xcodebuild
+xcodebuild_arguments:
+  - -verbose  # no effect
+  - -scheme
+  - rfSwiftUI
+  - -sdk
+  - iphonesimulator
+  - -destination
+  - 'platform=iOS Simulator,name=iPhone 11 Pro,OS=latest'
+author: Rudi Farkas
+copyright: Copyright © 2021 Rudi Farkas. All rights reserved.
+min_acl: internal
