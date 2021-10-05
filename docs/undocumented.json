@@ -1,0 +1,54 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/rudifarkas/GitHub/iOS/rudifa/HOT/rfSwiftUI/Sources/rfSwiftUI/CustomShapes.swift",
+      "line": 25,
+      "symbol": "Diamond.insetAmount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rudifarkas/GitHub/iOS/rudifa/HOT/rfSwiftUI/Sources/rfSwiftUI/CustomShapes.swift",
+      "line": 27,
+      "symbol": "Diamond.init(insetAmount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rudifarkas/GitHub/iOS/rudifa/HOT/rfSwiftUI/Sources/rfSwiftUI/CustomShapes.swift",
+      "line": 37,
+      "symbol": "Diamond.insets(in:insetAmount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rudifarkas/GitHub/iOS/rudifa/HOT/rfSwiftUI/Sources/rfSwiftUI/CustomShapes.swift",
+      "line": 74,
+      "symbol": "Squiggle.insetAmount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rudifarkas/GitHub/iOS/rudifa/HOT/rfSwiftUI/Sources/rfSwiftUI/CustomShapes.swift",
+      "line": 76,
+      "symbol": "Squiggle.init(insetAmount:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rudifarkas/GitHub/iOS/rudifa/HOT/rfSwiftUI/Sources/rfSwiftUI/StripedShapes.swift",
+      "line": 30,
+      "symbol": "VStripes.numberOfStripes",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/rudifarkas/GitHub/iOS/rudifa/HOT/rfSwiftUI/Sources/rfSwiftUI/StripedShapes.swift",
+      "line": 32,
+      "symbol": "VStripes.init(numberOfStripes:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/rudifarkas/GitHub/iOS/rudifa/HOT/rfSwiftUI"
+}

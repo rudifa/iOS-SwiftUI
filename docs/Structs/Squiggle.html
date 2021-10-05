@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Squiggle Structure Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Struct/Squiggle" class="dashAnchor"></a>
+    <a title="Squiggle Structure Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (81% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        Squiggle Structure Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/InsettableShape.html">InsettableShape</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/Shape.html">Shape</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView.html">ContentView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ContentView_Previews.html">ContentView_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CustomShapesDemo.html">CustomShapesDemo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CustomShapesDemo_Previews.html">CustomShapesDemo_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Diamond.html">Diamond</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ShapeStrokeAndFillDemo.html">ShapeStrokeAndFillDemo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ShapeStrokeAndFillDemo_Previews.html">ShapeStrokeAndFillDemo_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Squiggle.html">Squiggle</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StripedShapesDemo.html">StripedShapesDemo</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/StripedShapesDemo_Previews.html">StripedShapesDemo_Previews</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/VStripes.html">VStripes</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Squiggle</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">Squiggle</span> <span class="p">:</span> <span class="kt">InsettableShape</span></code></pre>
+
+                </div>
+              </div>
+            <p>Draws a squiggle within the frame of the view containing it.</p>
+
+<p>The squiggle looks like an oversized character ~ (tilde).</p>
+
+<p>Squiggle accepts both .stroke and .strokeBorder methods</p>
+<pre class="highlight swift"><code><span class="kt">Squiggle</span><span class="p">()</span><span class="o">.</span><span class="nf">stroke</span><span class="p">(</span><span class="kt">Color</span><span class="o">.</span><span class="n">red</span><span class="p">,</span> <span class="nv">lineWidth</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">fill</span><span class="p">:</span> <span class="kt">Color</span><span class="o">.</span><span class="n">green</span><span class="p">)</span>
+<span class="kt">Squiggle</span><span class="p">()</span><span class="o">.</span><span class="nf">strokeBorder</span><span class="p">(</span><span class="kt">Color</span><span class="o">.</span><span class="n">red</span><span class="p">,</span> <span class="nv">lineWidth</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span> <span class="nv">fill</span><span class="p">:</span> <span class="kt">Color</span><span class="o">.</span><span class="n">green</span><span class="p">)</span>
+</code></pre>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9rfSwiftUI8SquiggleV11insetAmount12CoreGraphics7CGFloatVvp"></a>
+                    <a name="//apple_ref/swift/Property/insetAmount" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9rfSwiftUI8SquiggleV11insetAmount12CoreGraphics7CGFloatVvp">insetAmount</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">insetAmount</span><span class="p">:</span> <span class="kt">CGFloat</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:9rfSwiftUI8SquiggleV11insetAmountAC12CoreGraphics7CGFloatV_tcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(insetAmount:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:9rfSwiftUI8SquiggleV11insetAmountAC12CoreGraphics7CGFloatV_tcfc">init(insetAmount:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">insetAmount</span><span class="p">:</span> <span class="kt">CGFloat</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI15InsettableShapeP5inset2by05InsetD0Qz12CoreGraphics7CGFloatV_tF"></a>
+                    <a name="//apple_ref/swift/Method/inset(by:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI15InsettableShapeP5inset2by05InsetD0Qz12CoreGraphics7CGFloatV_tF">inset(by:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">inset</span><span class="p">(</span><span class="n">by</span> <span class="nv">amount</span><span class="p">:</span> <span class="kt">CGFloat</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">some</span> <span class="kt">InsettableShape</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7SwiftUI5ShapeP4path2inAA4PathVSo6CGRectV_tF"></a>
+                    <a name="//apple_ref/swift/Method/path(in:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7SwiftUI5ShapeP4path2inAA4PathVSo6CGRectV_tF">path(in:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">path</span><span class="p">(</span><span class="k">in</span> <span class="nv">rect</span><span class="p">:</span> <span class="kt">CGRect</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Path</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright © 2021 Rudi Farkas. All rights reserved.</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
