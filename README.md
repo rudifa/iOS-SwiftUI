@@ -2,4 +2,4 @@
 
 Utility extensions for SwiftUI.
 
-See the documentation [here](docs/index.html).
+See the documentation [here](https://rudifa.github.io/docs/rfSwiftUI).
