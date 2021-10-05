@@ -8,3 +8,4 @@ DerivedData/
 .xcodesamplecode.plist
 .build/
 #docs/
+docsets/
