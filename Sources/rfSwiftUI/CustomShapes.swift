@@ -35,6 +35,7 @@ public struct Diamond: InsettableShape {
     }
 
     func insets(in rect: CGRect, insetAmount: CGFloat) -> CGPoint {
+        if rect.width == 0.0 || rect.height == 0.0 { return .zero }
         func sqr<T: Numeric>(_ x: T) -> T { x * x }
         let diagonal = sqrt(sqr(rect.width) + sqr(rect.height))
         let insetX = insetAmount * diagonal / rect.height
@@ -103,7 +104,7 @@ public struct Squiggle: InsettableShape {
 // MARK: - Demo
 
 /// Demonstrates Custom Shapes
-/// 
+///
 struct CustomShapesDemo: View {
     var body: some View {
         HStack(spacing: 20) {
