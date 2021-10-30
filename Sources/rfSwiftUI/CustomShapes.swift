@@ -60,6 +60,57 @@ public struct Diamond: InsettableShape {
     }
 }
 
+/// Draws a hexagon within the frame of the view containing it.
+///
+/// One of the hexagons's diagonals is horizontal.
+///
+/// Hexagon accepts both .stroke and .strokeBorder methods:
+///
+/// ````
+/// Hexagon().stroke(Color.red, lineWidth: 10, fill: Color.green)
+/// Hexagon().strokeBorder(Color.red, lineWidth: 10, fill: Color.green)
+/// ````
+///
+public struct Hexagon: InsettableShape {
+    var insetAmount: CGFloat
+
+    public init(origin: CGPoint = .zero, side: CGFloat = 10, insetAmount: CGFloat = 0) {
+        self.insetAmount = insetAmount
+    }
+
+    public func inset(by amount: CGFloat) -> some InsettableShape {
+        var hexagon = self
+        hexagon.insetAmount = amount
+        return hexagon
+    }
+
+    public func path(in rect: CGRect) -> Path {
+        func rads(_ degrees: CGFloat) -> CGFloat {
+            return degrees * CGFloat.pi / 180.0
+        }
+        let c60 = cos(rads(60))
+        let s60 = sin(rads(60))
+        let side = min(rect.midX, rect.midY) - insetAmount
+
+        let p0 = CGPoint(x: rect.midX + side, y: rect.midY)
+        let p1 = CGPoint(x: rect.midX + side * c60, y: rect.midY + side * s60)
+        let p2 = CGPoint(x: rect.midX - side * c60, y: rect.midY + side * s60)
+        let p3 = CGPoint(x: rect.midX - side, y: rect.midY)
+        let p4 = CGPoint(x: rect.midX - side * c60, y: rect.midY - side * s60)
+        let p5 = CGPoint(x: rect.midX + side * c60, y: rect.midY - side * s60)
+
+        var p = Path()
+        p.move(to: p0)
+        p.addLine(to: p1)
+        p.addLine(to: p2)
+        p.addLine(to: p3)
+        p.addLine(to: p4)
+        p.addLine(to: p5)
+        p.closeSubpath()
+        return p
+    }
+}
+
 /// Draws a squiggle within the frame of the view containing it.
 ///
 /// The squiggle looks like an oversized character ~ (tilde).
