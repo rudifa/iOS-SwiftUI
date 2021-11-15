@@ -18,7 +18,7 @@ struct ContentView: View {
 
                 NavigationLink(destination: { StripedShapesDemo() }, label: { Text("Striped Shapes ") })
             }
-            .navigationBarTitle(Text("Demos"))
+            .navigationTitle(Text("Demos"))
             .padding()
         }
     }
